@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+    <RelativeLayout
+       android:id="@+id/case_RL_actionbar"
+       android:layout_width="fill_parent"
+       android:layout_height="50dp"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentTop="true" 
+       android:background="@drawable/ic_action_bg">
+
+        <TextView
+            android:id="@+id/case_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:text="案 件 详 情 " />
+    
+    </RelativeLayout>
+    
+    
+    
+    <RelativeLayout
+       android:id="@+id/case_RL1"
+       android:layout_width="fill_parent"
+       android:layout_height="50dp"
+       android:layout_below="@+id/case_RL_actionbar"
+       android:background="@drawable/layout_bg1">
+       <TextView
+           android:id="@+id/case_tv_time"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBaseline="@+id/case_et_time"
+           android:layout_alignBottom="@+id/case_et_time"
+           android:layout_alignParentLeft="true"
+           android:layout_marginLeft="30dp"
+           android:text="时间"
+           android:textSize="20sp" />
+
+       <EditText
+           android:id="@+id/case_et_date"
+           android:layout_width="100dp"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@+id/case_tv_time"
+           android:layout_marginLeft="30dp"
+           android:layout_centerVertical="true"
+           android:gravity="center"
+           android:background="@drawable/login_input_top"
+           android:textSize="18sp" />
+       
+       <EditText
+           android:id="@+id/case_et_time"
+           android:layout_width="100dp"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@+id/case_et_date"
+           android:layout_marginLeft="20dp"
+           android:layout_centerVertical="true"
+           android:gravity="center"
+           android:background="@drawable/login_input_top"
+           android:textSize="18sp" />
+
+   </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/case_RL2"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/case_RL1" 
+         android:background="@drawable/layout_bg1">
+       <RelativeLayout
+        android:id="@+id/case_RL2_1"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+         >
+       
+        <TextView
+            android:id="@+id/case_tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:text="地点"
+            android:textSize="20sp" />
+        
+           </RelativeLayout>
+           
+        <RelativeLayout
+        android:id="@+id/case_RL2_2"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_toRightOf="@+id/case_RL2_1">
+
+        <EditText
+            android:id="@+id/case_et_ptCity"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:background="@drawable/login_input_top"
+            android:textSize="18sp" 
+            android:text=""/>
+        
+        <TextView
+            android:id="@+id/case_tv_ptCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/case_et_ptCity"            
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="市"
+            android:textSize="20sp" />
+        
+        <TextView
+            android:id="@+id/case_tv_ptDis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/case_et_ptDis"            
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="区"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/case_et_ptDis"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/case_tv_ptCity"
+            android:background="@drawable/login_input_top"
+            android:ems="10"
+            android:textSize="18sp" 
+            android:text="">
+        </EditText>
+         </RelativeLayout>
+         
+        <RelativeLayout
+        android:id="@+id/case_RL2_3"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@+id/case_RL2_2"
+        android:layout_toRightOf="@+id/case_RL2_1">
+        <EditText
+            android:id="@+id/case_et_ptStreet"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:background="@drawable/login_input_top"
+            android:textSize="18sp" 
+            android:text=""/>
+        
+        <TextView
+            android:id="@+id/case_tv_ptStreet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/case_et_ptStreet"            
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="街"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/case_bt_location"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/case_tv_ptStreet"
+            android:background="@drawable/ic_location" />
+        
+          </RelativeLayout>
+
+        
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/case_RL3"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/case_RL2" 
+        android:background="@drawable/layout_bg1">
+        
+        <TextView
+            android:id="@+id/case_tv_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:text="电话"
+            android:textSize="20sp" />
+        <EditText
+           android:id="@+id/case_et_tel"
+           android:layout_width="200dp"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@+id/case_tv_tel"
+           android:layout_marginLeft="30dp"
+           android:layout_centerVertical="true"
+           android:gravity="center"
+           android:background="@drawable/login_input_top"
+           android:hint="请输入您的联系方式"
+           android:phoneNumber="true"
+           android:textSize="18sp" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/case_RL4"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/case_RL3" 
+        android:background="@drawable/layout_bg1">
+        
+          <TextView
+            android:id="@+id/case_tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:text="类型"
+            android:textSize="20sp" />
+                    
+
+          <Spinner
+              android:id="@+id/case_sp_type"
+              android:layout_width="150dp"
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+              android:layout_marginLeft="30dp"              
+              android:layout_toRightOf="@+id/case_tv_type"
+              android:gravity="center"
+              android:entries="@array/casetypes" />
+
+
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/case_RL5"
+        android:layout_width="fill_parent"
+        android:layout_height="130dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/case_RL4" 
+        android:background="@drawable/layout_bg1">
+         <TextView
+            android:id="@+id/case_tv_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:text="照片"
+            android:textSize="20sp" />
+         <RelativeLayout
+        android:id="@+id/case_RL5_1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/case_tv_pic">
+                 
+          <Button
+            android:id="@+id/c_btn_picture"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"  
+            android:background="@drawable/ic_camera" />         
+          </RelativeLayout>
+
+           <com.policecom.adapter.HorizontalListView
+            android:id="@+id/c_image_list"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="30dp"  
+			android:layout_toRightOf="@id/case_tv_pic"
+			android:layout_below="@id/case_RL5_1"
+            android:layout_height="80dp">
+          </com.policecom.adapter.HorizontalListView>
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/case_RL6"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/case_RL5" >
+        
+        <TextView
+            android:id="@+id/case_tv_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:text="描述"
+            android:textSize="20sp" />
+        
+        <EditText
+           android:id="@+id/case_et_describe"
+           android:layout_width="230dp"
+           android:layout_height="80dp"
+           android:layout_toRightOf="@+id/case_tv_describe"
+           android:layout_marginLeft="30dp"
+           android:layout_centerVertical="true"
+           android:maxLines="3" 
+           android:hint="请输入详细案件信息，最多输入150字"
+           android:scrollHorizontally="true"
+           android:gravity="left|top"
+           android:background="@drawable/login_input_top"
+           android:textSize="18sp" />
+        
+       
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/case_RL7"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true" >
+        <Button
+       android:id="@+id/c_btn_submit"
+       android:layout_width="320dp"
+       android:layout_height="40dp"
+       style="@style/btn_base_submit"
+       android:layout_centerHorizontal="true"
+       android:layout_centerVertical="true"
+       android:textSize="20sp"
+       android:text="提交" />
+        
+        </RelativeLayout>
+   
+
+</RelativeLayout>
+

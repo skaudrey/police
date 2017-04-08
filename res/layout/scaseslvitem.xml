@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">"
+
+    <TextView
+        android:id="@+id/scaseslvitem_tv_id"
+        android:layout_width="30dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical"
+        android:textSize="18sp"
+        android:textColor="#444444"
+         />
+    <TextView
+        android:id="@+id/scaseslvitem_tv_type"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical"
+        android:textSize="18sp"
+        android:textColor="#444444"
+        />
+    <TextView
+        android:id="@+id/scaseslvitem_tv_describe"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="#444444"
+        android:textSize="18sp"
+        />
+
+    <ImageView
+        android:id="@+id/scaseslvitem_im_next"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/im_item_next" />
+
+</LinearLayout>

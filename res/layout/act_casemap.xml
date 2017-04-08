@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+        
+	 <RelativeLayout
+         android:id="@+id/top_container"
+         android:layout_width="fill_parent"
+         android:layout_height="48dp"
+         android:background="#031216" >
+
+         <ImageButton
+             android:id="@+id/btapp"
+             android:layout_width="48dp"
+             android:layout_height="48dp"
+             android:layout_gravity="top"
+             android:background="@drawable/ic_launcher"
+             android:scaleType="fitXY" /> 
+     </RelativeLayout>
+
+	   <!-- 地图控件 -->
+     <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+        
+        <!-- 返回 --> 
+         <Button
+            android:id="@+id/cm_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentRight="true"
+           style="@style/btn_base"
+           android:text="返回" />
+</RelativeLayout>

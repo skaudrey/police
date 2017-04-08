@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/wel_bg">
+    
+
+ 
+    <Button
+        android:id="@+id/wel_btn_sheriff"
+        style="@style/btn_wel"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/wel_btn_police"
+        android:layout_alignLeft="@+id/wel_btn_case"
+        android:layout_marginBottom="15dp"
+        android:text="警 长"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/wel_btn_police"
+        style="@style/btn_wel"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/wel_btn_case"
+        android:layout_alignLeft="@+id/wel_btn_case"
+        android:layout_marginBottom="15dp"
+        android:text="警 员"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+    
+    <Button
+        android:id="@+id/wel_btn_case"
+        style="@style/btn_wel_case"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:text="一 键 报 案"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/wel_im_star"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/wel_star" />
+
+</RelativeLayout>

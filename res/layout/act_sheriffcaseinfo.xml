@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg" >
+    
+    <RelativeLayout
+       android:id="@+id/scaseinfo_RL_actionbar"
+       android:layout_width="fill_parent"
+       android:layout_height="50dp"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentTop="true" 
+       android:background="@drawable/ic_action_bg">
+
+        <TextView
+            android:id="@+id/scaseinfo_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:text="案 件 详 情 " />
+    
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/scaseinfo_RL1"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_below="@+id/scaseinfo_RL_actionbar"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/layout_bg2">
+
+        <ImageView
+            android:id="@+id/scaseinfo_im_calendar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/im_invest_calendar" />
+
+        <TextView
+            android:id="@+id/scaseinfo_tv_date"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/scaseinfo_im_calendar"
+            android:textSize="20sp"
+            android:textColor="#666666"
+            android:text="日期" />
+
+        <TextView
+            android:id="@+id/scaseinfo_tv_showdate"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/scaseinfo_tv_date"
+            android:textColor="#666666"
+            android:textSize="20sp" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/scaseinfo_RL2"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_below="@+id/scaseinfo_RL1"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/layout_bg2">
+
+        <ImageView
+            android:id="@+id/scaseinfo_im_clock"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/im_invest_clock" />
+
+        <TextView
+            android:id="@+id/scaseinfo_tv_time"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/scaseinfo_im_clock"
+            android:textSize="20sp"
+            android:textColor="#666666"
+            android:text="时间" />
+
+        <TextView
+            android:id="@+id/scaseinfo_tv_showtime"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/scaseinfo_tv_time"
+            android:textColor="#666666"
+            android:textSize="20sp" />
+        
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/scaseinfo_RL3"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_below="@+id/scaseinfo_RL2"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/layout_bg2">
+
+        <ImageView
+            android:id="@+id/scaseinfo_im_location"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/im_invest_location" />
+
+        <TextView
+            android:id="@+id/scaseinfo_tv_location"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/scaseinfo_im_location"
+            android:textSize="20sp"
+            android:textColor="#666666"
+            android:text="地点" />
+
+        <TextView
+            android:id="@+id/scaseinfo_tv_showlocation"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/scaseinfo_tv_location"
+            android:textColor="#666666"
+            android:textSize="20sp" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/scaseinfo_RL4"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_below="@+id/scaseinfo_RL3"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/layout_bg2">
+
+        <ImageView
+            android:id="@+id/scaseinfo_im_tel"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/im_invest_phone" />
+
+        <TextView
+            android:id="@+id/scaseinfo_tv_tel"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/scaseinfo_im_tel"
+            android:textSize="20sp"
+            android:textColor="#666666"
+            android:text="电话" />
+
+        <TextView
+            android:id="@+id/scaseinfo_tv_showtel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/scaseinfo_tv_tel"
+            android:textColor="#666666"
+            android:textSize="20sp" />
+        
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/scaseinfo_RL5"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_below="@+id/scaseinfo_RL4"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/layout_bg2">
+
+        <ImageView
+            android:id="@+id/scaseinfo_im_type"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/im_invest_type" />
+
+        <TextView
+            android:id="@+id/scaseinfo_tv_type"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/scaseinfo_im_type"
+            android:textSize="20sp"
+            android:textColor="#666666"
+            android:text="类型" />
+
+        <TextView
+            android:id="@+id/scaseinfo_tv_showtype"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/scaseinfo_tv_type"
+            android:textColor="#666666"
+            android:textSize="20sp" />
+        
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/scaseinfo_RL6"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/scaseinfo_RL5"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/layout_bg2">
+
+        <ImageView
+            android:id="@+id/scaseinfo_im_picture"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/im_invest_picture" />
+
+        <TextView
+            android:id="@+id/scaseinfo_tv_picture"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/scaseinfo_im_picture"
+            android:textSize="20sp"
+            android:textColor="#666666"
+            android:text="照片" />
+
+        <com.policecom.adapter.HorizontalListView
+            android:id="@+id/scaseinfo_image_list"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+        </com.policecom.adapter.HorizontalListView>
+    
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/scaseinfo_RL7"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/scaseinfo_RL6"
+        android:layout_marginTop="1dp"
+        >
+
+        <ImageView
+            android:id="@+id/scaseinfo_im_describe"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/im_invest_describe" />
+
+        <TextView
+            android:id="@+id/scaseinfo_tv_describe"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/scaseinfo_im_describe"
+            android:textSize="20sp"
+            android:textColor="#666666"
+            android:text="描述" />
+
+        <EditText
+            android:id="@+id/scaseinfo_tv_showdescribe"
+            android:layout_width="160dp"
+            android:layout_height="75dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/scaseinfo_tv_describe"
+            android:background="@drawable/bg"
+            android:scrollHorizontally="true"
+            android:editable="false"
+            android:textColor="#666666"
+            android:textSize="20sp" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

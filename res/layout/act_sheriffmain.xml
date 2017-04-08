@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wel_bg">
+    
+     <RelativeLayout
+       android:id="@+id/sm_RL_actionbar"
+       android:layout_width="fill_parent"
+       android:layout_height="50dp"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentTop="true" 
+       android:background="@drawable/ic_action_bg">
+
+        <TextView
+            android:id="@+id/sm_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:text="警 长" />
+    
+    </RelativeLayout>
+
+<Button
+    android:id="@+id/sm_btn_case"
+    style="@style/btn_wel"
+    android:layout_width="160dp"
+    android:layout_height="40dp"
+    android:layout_above="@+id/sm_btn_police"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="24dp"
+    android:text="最 近 发 生 案 件"
+    android:textColor="#ffffff"
+    android:textSize="20sp" />
+
+<Button
+    android:id="@+id/sm_btn_policecar"
+    style="@style/btn_wel"
+    android:layout_width="160dp"
+    android:layout_height="40dp"
+    android:layout_above="@+id/sm_btn_info"
+    android:layout_alignLeft="@+id/sm_btn_info"
+    android:layout_marginBottom="18dp"
+    android:text="查 看 警 车"
+    android:textColor="#ffffff"
+    android:textSize="20sp" />
+
+<Button
+    android:id="@+id/sm_btn_police"
+    style="@style/btn_wel"
+    android:layout_width="160dp"
+    android:layout_height="40dp"
+    android:layout_above="@+id/sm_btn_policecar"
+    android:layout_alignLeft="@+id/sm_btn_case"
+    android:layout_marginBottom="20dp"
+    android:text="查 看 警 员"
+    android:textColor="#ffffff"
+    android:textSize="20sp" />
+
+<Button
+    android:id="@+id/sm_btn_info"
+    style="@style/btn_wel"
+    android:layout_width="160dp"
+    android:layout_height="40dp"
+    android:layout_alignLeft="@+id/sm_btn_police"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="34dp"
+    android:text="个 人 信 息"
+    android:textColor="#ffffff"
+    android:textSize="20sp" />
+
+</RelativeLayout>
+
+
+

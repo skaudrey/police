@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="casetypes">
+        <item>交通事故</item>
+        <item>故意伤害</item>
+        <item>火灾</item>
+        <item>偷盗</item>
+        <item>抢劫</item>
+        <item>其他</item>        
+    </string-array>   
+</resources>

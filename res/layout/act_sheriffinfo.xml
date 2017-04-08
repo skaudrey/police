@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+    <RelativeLayout
+       android:id="@+id/si_RL_actionbar"
+       android:layout_width="fill_parent"
+       android:layout_height="50dp"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentTop="true" 
+       android:background="@drawable/ic_action_bg">
+
+        <TextView
+            android:id="@+id/si_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:text="警 员 信 息" />
+    
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/si_imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/si_RL_actionbar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp" 
+        android:background="@drawable/im_police_icon"/>
+       
+
+    <RelativeLayout
+        android:id="@+id/si_RL1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"       
+        android:layout_toRightOf="@+id/si_imageView"
+        android:layout_below="@+id/si_RL_actionbar"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp" >
+        <TextView
+                android:id="@+id/si_tv_name"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:text="姓名"
+                android:textSize="20sp" />
+            <TextView
+        android:id="@+id/si_name"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/si_tv_name"
+        android:layout_marginLeft="15dp"
+         android:textSize="20sp"
+        android:text="张三" />
+
+            
+          
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/si_RL2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"       
+        android:layout_toRightOf="@+id/si_imageView"
+        android:layout_below="@+id/si_RL1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp" >
+        <TextView
+            android:id="@+id/si_tv_birth"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="20sp"
+            android:text="出生日期"/>
+            <TextView
+        android:id="@+id/si_birth"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/si_tv_birth"
+        android:layout_marginLeft="10dp"
+         android:textSize="20sp"
+        android:text="1980-01-01" />
+          
+    </RelativeLayout>
+    
+    
+    <RelativeLayout
+        android:id="@+id/si_RL3"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"       
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/si_RL2"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp" >
+        <TextView
+            android:id="@+id/si_tv_phoneNum"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:text="电话"/>
+            <TextView
+        android:id="@+id/si_phoneNum"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/si_tv_phoneNum"
+        android:layout_marginLeft="30dp"
+         android:textSize="20sp"
+        android:text="13590002345" />
+          
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/si_RL4"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"       
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/si_RL3"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp" >
+        <TextView
+            android:id="@+id/si_tv_officeNum"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:text="警局号"/>
+            <TextView
+        android:id="@+id/si_officeNum"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/si_tv_officeNum"
+        android:layout_marginLeft="30dp"
+         android:textSize="20sp"
+        android:text="876543210" />
+          
+    </RelativeLayout>
+    
+     <RelativeLayout
+        android:id="@+id/si_RL5"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"       
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/si_RL4"
+        android:layout_marginLeft="40dp" 
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/si_tv_address"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:text="警局地址"/>
+            <TextView
+        android:id="@+id/si_address"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/si_tv_address"
+        android:layout_marginLeft="30dp"
+         android:textSize="20sp"
+        android:text="武汉市洪山区珞喻路" />
+          
+    </RelativeLayout>
+
+</RelativeLayout>
+
